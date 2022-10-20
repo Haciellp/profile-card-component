@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark_cyan: hsl(185, 75%, 39%);
+    --Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --Dark_grayish_blue: hsl(227, 10%, 46%);
+    --Dark_gray: hsl(0, 0%, 59%);
+}
+/*----------------------Body----------------------*/
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--Dark_cyan);
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: right 51vw bottom 21vh, left 45vw top 50vh;
+}
+/*----------------------Card Container----------------------*/
+.cardContainer{
+    margin: 147px auto 50px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 375px;
+    width: 330px;
+    position: relative;
+}
+.card__bg-card{
+    height: 140px;
+    width: 100%;
+}
+.card__photo{
+    position: absolute;
+    top: 89px;
+    left: 35%;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 95px;
+}
+.card__profileContainer {
+    background-color: white;
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    margin-top: -4px;
+    text-align: center;
+}
+.card__username{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+}
+.age{
+    color: var(--Dark_grayish_blue);
+    font-weight: 400;
+}
+.card__city{
+    margin-top: 9px;
+    font-size: 0.8rem;
+    color: var(--Dark_gray);
+}
+.stats-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-top: 1px solid var(--Dark_gray);
+    padding: 20px 30px;
+    height: 45px;
+}
+.quantity{
+ font-size: 0.9rem;
+ font-weight: 700;
+ margin-bottom: 10px;
+}
+.units{
+    font-size: 0.6rem;
+    color: var(--Dark_gray);
+    letter-spacing: 2px;
+}
+/*----------------------attribution----------------------*/
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width:1440px){
+    .cardContainer{
+        width: 350px;
+    }
+}
