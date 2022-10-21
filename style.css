@@ -8,9 +8,9 @@
 /*----------------------Body----------------------*/
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -23,7 +23,7 @@ body {
 }
 /*----------------------Card Container----------------------*/
 .cardContainer{
-    margin: 115px auto 50px auto;
+    margin-bottom: 50px ;
     border-radius: 15px;
     overflow: hidden;
     height: 375px;
